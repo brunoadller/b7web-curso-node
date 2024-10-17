@@ -5,8 +5,11 @@
     "tsx": "^4.19.1",
     "typescript": "^5.6.2"
   },
+  
   "scripts": {
-    "start": "node --env-file=.env --import=tsx --watch ./src/server.ts"
+    "start": "node --env-file=.env --import=tsx --watch ./src/server.ts",
+    "file": "node --import=tsx --watch ./src/file.ts",
+    "comments":"file foi criado para separar entre arquivos diferentes e não ficar sendo usando em rotas ou algo do tipo" 
   },
   "dependencies": {
     "express": "^4.21.0",

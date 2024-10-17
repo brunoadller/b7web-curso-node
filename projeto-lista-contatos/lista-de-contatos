@@ -1,0 +1,14 @@
+API DE LISTA DE CONTATOS
+
+-criar um novo contato
+-Listar os contatos
+-Excluir o contato
+-tentar faxer exclusão por endereço de array
+
+
+
+Planejamento de rotas:
+
+- POST /contato {name: "João"}
+- GET /contatos 
+- DELETE /contato?name=João
