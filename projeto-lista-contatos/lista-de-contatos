@@ -12,3 +12,44 @@ Planejamento de rotas:
 - POST /contato {name: "João"}
 - GET /contatos 
 - DELETE /contato?name=João
+
+
+1º -> npm init
+    no entry pooint: src/server.ts
+    Só dar enter em tudo até terminar o npm init
+2º -> Express and helmet intall:
+    npm i express helmet
+
+3º -> types install
+    npm i -D @types/express @types/node tsx typescript
+
+4º -> criar a pasta src e dentro o arquivo server.ts
+
+5º -> Intalar tsc.config
+    npx tsc --init
+
+6º -> Configurando os comandos no package.json
+    "dev": "node --import=tsx --watch ./src/server.ts"
+
+7º -> no sever.ts
+    import express
+    import helmet
+    const server = express()
+
+    server.use(helmet())
+    server.use(express.json())
+    server.use(express.urlencoded({extend: true}))
+
+    // colocando o router das rotas
+    server.use("/", router)
+
+    server.listen(3000, () => {
+        console.log('servidor rodando: http://localhost:3000',  )
+    })
+8º -> Após isso criar uma pasta routes e dentro dela criar um arquivo index.ts e ali criar as rotas
+    import express
+    const router = express.Router()
+    //aquientre eles colocar a rota
+    export default router
+
+9º rodando com npm run dev
