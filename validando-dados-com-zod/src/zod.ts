@@ -1,4 +1,4 @@
-import {result} from '../src/aulas/Opcionais'
+import {result} from './aulas/transform'
 
 
 console.log(result)
