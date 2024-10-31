@@ -8,5 +8,5 @@ router.get('/', PageController.home)
 router.get('/dogs', PageController.dogs)
 router.get('/cats', PageController.cats)
 router.get('/fishes', PageController.fishes)
-router.get('search', SeacrhController.search)
+router.get('/search', SeacrhController.search)
 export default router
